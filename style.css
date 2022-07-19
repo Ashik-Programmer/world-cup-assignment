@@ -70,6 +70,7 @@ body {
     animation-iteration-count: infinite;
 }
 
+/* animation added */
 @keyframes angle {
     0% {
         color: #FFFFFF;
@@ -88,5 +89,61 @@ body {
     100% {
         opacity: 0;
         left: 32px;
+    }
+}
+
+/* responsive section */
+/* mobile responsive */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 334px;
+    }
+
+    .header-banner {
+        flex-direction: column;
+    }
+
+    .header-details {
+        text-align: center;
+        width: 258px;
+        padding: 28px 38px;
+    }
+
+    .header-details h2 {
+        font-size: 22px;
+    }
+
+    .header-details p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 258px;
+        white-space: nowrap;
+    }
+
+    .header-img img {
+        width: 233px;
+        margin: 0px 38px -7px 63px;
+    }
+
+}
+
+/* Tablet device */
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .container {
+        width: 734px;
+    }
+
+    .header-details {
+        width: 316px;
+        padding: 61px 2px 61px 76px;
+    }
+
+    .header-details h2 {
+        font-size: 35px;
+    }
+
+    .header-img img {
+        width: 323px;
+        margin: 58px 17px -7px 0px;
     }
 }
