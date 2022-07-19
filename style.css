@@ -92,6 +92,89 @@ body {
     }
 }
 
+/* blog section */
+.blog-left {
+    display: flex;
+}
+
+.blog-menu {
+    width: 225px;
+    background: #161616;
+    border-radius: 10px;
+    padding: 15px;
+    height: 235px;
+}
+
+.blog-menu>.upcoming {
+    margin-top: 14px;
+}
+
+.blog-menu a {
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    color: #161616;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.blog-menu>.active {
+    background: #DD0000;
+    color: #FFFFFF;
+}
+
+/* blog-article */
+.blog-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    margin-left: 25px;
+}
+
+.blog {
+    width: 312px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-details h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.blog-details a {
+    color: #161616;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+.blog-info {
+    color: rgba(22, 22, 22, 0.7);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-icon {
+    width: 14px;
+}
+
+
+
 /* responsive section */
 /* mobile responsive */
 @media only screen and (max-width:688px) {
@@ -125,6 +208,29 @@ body {
         margin: 0px 38px -7px 63px;
     }
 
+    /* blog section */
+    .blog-left {
+        flex-direction: column;
+    }
+
+    .blog-menu {
+        width: 100%;
+        background: #FFFFFF;
+        padding: 0 56px;
+    }
+
+    .blog-menu a {
+        display: block;
+        width: 200px;
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        margin-left: 8px;
+    }
+
+    .blog-article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 /* Tablet device */
@@ -145,5 +251,42 @@ body {
     .header-img img {
         width: 323px;
         margin: 58px 17px -7px 0px;
+    }
+
+    /* blog section */
+    .blog {
+        width: 357px;
+    }
+
+    .blog-hide {
+        display: none;
+    }
+
+    .blog-img img {
+        width: 357px;
+    }
+
+    .blog-left {
+        flex-direction: column;
+    }
+
+    .blog-menu {
+        width: 100%;
+        background: #FFFFFF;
+        padding: 0;
+        height: 110px;
+    }
+
+    .blog-menu a {
+        display: inline-block;
+        width: 200px;
+        background: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        margin-left: 8px;
+    }
+
+    .blog-article {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
     }
 }
