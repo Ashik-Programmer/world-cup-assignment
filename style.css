@@ -79,10 +79,6 @@ body {
 
     50% {
         left: 16px;
-    }
-
-    80% {
-        left: 25px;
         opacity: 1;
     }
 
@@ -173,6 +169,53 @@ body {
     width: 14px;
 }
 
+.view-button {
+    display: none;
+}
+
+/* footer */
+footer {
+    background: #161616;
+    /* height: 444px; */
+    padding: 100px 140px;
+    padding-bottom: 25px;
+}
+
+.goal h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    margin: 35px 0;
+    text-align: center;
+}
+
+.footer-menu a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B9B9B9;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.menu-icon {
+    font-size: 25px;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.menu-icon .fa-brands {
+    color: #FFFFFF;
+    margin-left: 30px;
+}
 
 
 /* responsive section */
@@ -229,6 +272,17 @@ body {
 
     .blog-article {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer */
+    .footer-menu {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .footer-menu a {
+        display: block;
+        margin-bottom: 15px;
     }
 
 }
@@ -289,4 +343,18 @@ body {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 0;
     }
+
+    .view-button {
+        display: block;
+        margin: 50px auto;
+        padding: 15px 35px;
+        border: none;
+        outline: none;
+        background: #DD0000;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
 }
